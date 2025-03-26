@@ -1,55 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Essential Metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sophie's Bakery - London</title>
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/variables.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Sophie's Patisserie - London</title>
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Sophie's Bakery in London offers handmade pastries, custom cakes, and expert baking classes. Bringing passion and creativity to every dessert, Sophie crafts unique sweet experiences tailored to your needs."
+      content="Sophie's Patisserie in London offers handmade pastries, custom cakes, and expert baking classes. Bringing passion and creativity to every dessert, Sophie crafts unique sweet experiences tailored to your needs."
     />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Icons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/icons/icon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/icon-32x32.png"
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+    <!-- Web Manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Sophie's Patisserie - London" />
+    <meta
+      property="og:description"
+      content="Handmade pastries, custom cakes & expert baking classes."
+    />
+    <meta
+      property="og:image"
+      content="https://SophiesPatisserie.com/assets/social/social-media-card-1200x630.png"
+    />
+    <meta property="og:url" content="https://SophiesPatisserie.com" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sophie's Patisserie - London" />
+    <meta
+      name="twitter:description"
+      content="Handmade pastries, custom cakes & expert baking classes."
+    />
+    <meta
+      name="twitter:image"
+      content="https://SophiesPatisserie.com/assets/social/social-media-card-1200x630.png"
+    />
+
+    <!-- Structured Data (Schema.org for SEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Patisserie",
+        "name": "Sophie's Patisserie",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "London",
+          "addressCountry": "UK"
+        },
+        "telephone": "+44 20 1234 5678",
+        "email": "Contact@SophiesPatisserie.com",
+        "sameAs": ["https://www.instagram.com/sophiespatisserie"]
+      }
+    </script>
   </head>
   <body>
     <main>
       <div class="hero" data-aos="fade-down">
         <div class="left-col">
           <div class="hero-text">
-            <h1>Sophie's Bakery</h1>
+            <h1>Sophie's Patisserie</h1>
             <img
               src="assets/svg/divider.svg"
               alt="ornamental decoration for a section"
             />
-            <p>Artisan Baker, London</p>
+            <p>Master Pastry Chef, London</p>
 
             <div class="hero-divider"></div>
           </div>
           <div class="about">
             <p class="about-text">
-              Sophie's Bakery is a space dedicated to the art of traditional
-              baking, where each creation is made with passion and precision.
-              Based in London, Sophie blends classic techniques with modern
-              creativity to offer unique desserts and exquisite pastries.
+              Welcome to Sophie’s Patisserie, where every dessert is a work of
+              art. Based in London, Sophie crafts exquisite cakes and pastries
+              with the finest ingredients, blending classic techniques with
+              modern creativity. Indulge in a world of sweetness—perfect for any
+              occasion."
             </p>
             <div class="about-border-bottom"></div>
             <p class="about-text">
               Trained in renowned culinary schools, Sophie has developed a deep
               expertise in baking, offering custom cakes, refined pastries, and
-              hands-on workshops. Her bakery is a reflection of her love for
+              hands-on workshops. Her Patisserie is a reflection of her love for
               quality ingredients and her commitment to delivering delightful
               treats for all occasions.
             </p>
           </div>
         </div>
         <div class="right-col">
-          <img
-            src="./assets/images/hero/1.webp"
-            alt="Sophie decorating a cake"
-          />
+          <img src="./assets/images/hero/1.webp" alt="Sophie the " />
         </div>
       </div>
       <section class="gallery" data-aos="fade-up">
@@ -57,47 +121,50 @@
         <div class="image-container">
           <img
             src="./assets/images/galerie/image-1.webp"
-            alt="Freshly baked bread and croissants"
+            alt="Black Forest cake with raspberries"
             loading="lazy"
           />
           <img
             src="./assets/images/galerie/image-2.webp"
-            alt="Traditional apple tart"
+            alt="A cake with cream and berries"
             loading="lazy"
           />
+
           <img
             src="./assets/images/galerie/image-3.webp"
-            alt="Elegant wedding cake with floral decorations"
+            alt="Vanilla Macarons"
             loading="lazy"
           />
           <img
             src="./assets/images/galerie/image-4.webp"
-            alt="Macarons in assorted flavors"
+            alt="Apple pie with cinnamon"
             loading="lazy"
           />
+
           <img
             src="./assets/images/galerie/image-5.webp"
-            alt="Decadent chocolate cake"
+            alt="Raspberry gourmet desert"
             loading="lazy"
           />
           <img
             src="./assets/images/galerie/image-6.webp"
-            alt="Lemon tart with meringue topping"
+            alt="Coconut creamy cake"
             loading="lazy"
           />
           <img
             src="./assets/images/galerie/image-7.webp"
-            alt="Berry cheesecake with fresh fruits"
+            alt="Wedding Cake"
             loading="lazy"
           />
+
           <img
             src="./assets/images/galerie/image-8.webp"
-            alt="Classic Victoria sponge cake"
+            alt="Mango Cheesecake"
             loading="lazy"
           />
           <img
             src="./assets/images/galerie/image-9.webp"
-            alt="Cupcakes with colorful frosting"
+            alt="Triple chocolate cake"
             loading="lazy"
           />
         </div>
@@ -140,26 +207,35 @@
         <div class="contact-content">
           <img
             src="./assets/images/contact/1.webp"
-            alt="A cozy bakery kitchen with fresh pastries"
+            alt="A cozy Patisserie kitchen with fresh pastries"
             loading="lazy"
+            class="contact-image"
           />
           <div class="contact-texts-container" data-aos="fade-down">
             <div class="contact-texts">
-              <p class="contact-text" id="business-name">Sophie's Bakery</p>
+              <p class="contact-text" id="business-name">Sophie's Patisserie</p>
               <p class="contact-text">London</p>
               <p class="contact-text">United Kingdom</p>
             </div>
             <div class="contact-texts">
               <p class="contact-text">+44 20 1234 5678</p>
               <p class="contact-text">Monday - Friday, 9 AM - 6 PM</p>
-              <p class="contact-text">contact@sophiesbakery.com</p>
+              <p class="contact-text">Contact@SophiesPatisserie.com</p>
             </div>
           </div>
+          <div class="divider"></div>
+          <a href="https://instagram.com" target="_blank" data-aos="fade-down">
+            <img
+              src="assets/icons/instagram.svg"
+              alt="Instagram Logo"
+              class="contact-icon"
+            />
+          </a>
         </div>
       </section>
     </main>
     <footer class="footer" data-aos="fade-down">
-      © 2024 - Sophie's Bakery - All rights reserved.
+      © 2024 - Sophie's Patisserie - All rights reserved.
     </footer>
   </body>
   <script
